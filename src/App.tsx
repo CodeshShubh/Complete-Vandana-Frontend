@@ -47,7 +47,7 @@ const OrderDetails = lazy(()=>import( './pages/order-details'));
 
 const App = () => {
 // this is for taking user and loading
-  const {user , loading} = useSelector((state:{userReducer:UserReducerInitialState})=> state.userReducer)
+  const {user , loading} = useSelector((state:{userReducer:UserReducerInitialState})=> state.userReducer);
 
    const dispatch = useDispatch();
 
@@ -60,6 +60,7 @@ useEffect(() => {
     }else dispatch(userNotExist());
   });
 }, []);
+
 
   return loading? <Loader/> :(
     <Router>

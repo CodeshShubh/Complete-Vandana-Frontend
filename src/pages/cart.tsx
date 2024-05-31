@@ -6,12 +6,11 @@ import { Link } from "react-router-dom";
 import CartItemCard from "../components/cart-item";
 import {
   addToCart,
-  // addToCart,
   calculatePrice,
   discountApplied,
   removeCartItem
 } from "../redux/reducer/cartReducer";
-import { RootState, server } from "../redux/store"; //RootState,
+import { RootState, server } from "../redux/store";
 import { CartItem } from "../types/types";
  
  
